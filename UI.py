@@ -63,7 +63,6 @@ class UI(QWidget):
         for i in range(len(self.line_edits)):
             if self.line_edits[i].text() != self.command_list[i].strip("'\""):
                 self.shortcut.commands[self.shortcut.joystick_name][self.shortcut.buttons[i]] = self.line_edits[i].text()
-                print(self.shortcut.commands[self.shortcut.joystick_name][self.shortcut.buttons[i]])
 
     def save(self):
         if self.shortcut.verify_list():
