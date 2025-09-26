@@ -99,7 +99,9 @@ class Help(QWidget):
             # Simboluri comune (de pe tastaturi standard QWERTY)
             ["`", "-", "=", "[", "]", "\\", ";", "'", ",", ".", "/"],
             # Alte taste posibile în anumite layouturi
-            ["capslock", "numlock", "scrolllock", "escape"]
+            ["capslock", "numlock", "scrolllock", "escape"],
+            # Definite de mine
+            ["undefined"]
         ]
         main_layout = QVBoxLayout(self)
         main_layout.addWidget(QLabel(f"Toate tastele care sunt acceptate:"))
